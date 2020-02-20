@@ -5,6 +5,6 @@ RUN wget -O - 'https://github.com/elm/compiler/releases/download/0.19.1/binary-f
 RUN chmod +x /usr/local/bin/elm
 
 RUN apt-get update
-RUN apt-get install curl
+RUN apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_4.x | bash
 RUN apt-get install nodejs
